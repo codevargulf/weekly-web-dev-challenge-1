@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main-hero {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../assets/bg.png");
+  background-position: center right;
+  background-size: cover;
+}
+
+.main-hero::after {
+  content: "";
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("../assets/noise.png");
+  background-position: center right;
+  background-size: cover;
+  z-index: 1;
+}
+
+.container {
+  margin: auto;
+  width: 1000px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.col-sm {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.col-sm {
+  padding: 1em;
+}
+
+form {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  background-clip: padding-box;
+  border: 20px solid rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+.page-logo, .page-text {
+  opacity: 0.4;
+}
+
+.section h1 {
+  font-size: 32px;
+  color: #ffffff;
+  font-family: "Titillium Text22 L";
+  font-weight: 500;
+  -webkit-filter: drop-shadow(1px 1.732px 2px rgba(43, 1, 0, 0.75));
+          filter: drop-shadow(1px 1.732px 2px rgba(43, 1, 0, 0.75));
+  text-align: center;
+}
+
+label {
+  display: none;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #afafaf;
+  font-weight: 300;
+}
+
+input::-moz-placeholder {
+  font-size: 15px;
+  color: #afafaf;
+  font-weight: 300;
+}
+
+input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #afafaf;
+  font-weight: 300;
+}
+
+input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #afafaf;
+  font-weight: 300;
+}
+
+input::placeholder {
+  font-size: 15px;
+  color: #afafaf;
+  font-weight: 300;
+}
+
+.btn--primary, .btn--close {
+  display: inline-block;
+  padding: 0.3rem 2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary:disabled, .btn--close:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.btn--primary {
+  color: #333;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3d840), to(#7ec31f));
+  background: linear-gradient(#a3d840, #7ec31f);
+  text-shadow: 1px 1px 2px #2c6a02;
+  border: 1px solid #3b9a00;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.btn--close {
+  color: #333;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f65e70), to(#f03747));
+  background: linear-gradient(#f65e70, #f03747);
+  text-shadow: 1px 1px 2px #4e2505;
+  border: 1px solid #a72c36;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+.btn--small {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

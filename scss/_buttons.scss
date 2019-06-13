@@ -1,0 +1,59 @@
+// .btn {
+//     width: 100%;
+//     height: 48px;
+//     border-radius: 3px;
+//     box-shadow: 0.5px 0.866px 0px #ffffff;
+//     background-image: linear-gradient(0deg, #7cc01e 0%, #a3d741 100%);
+//     border: 1px solid #3b9a00;
+//     font-size: 24px;
+//     color: #ffffff;
+//     font-family: "Titillium Text22 L";
+//     font-weight: 500;
+//     box-shadow: 0.559px 0.829px 0px #51850e;
+// }
+
+// .btn-primary {
+// }
+
+
+// Buttons
+%btn {
+  display: inline-block;
+  padding: 0.3rem 2rem;
+  transition: all 0.5s ease;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+.btn {
+  &--primary {
+    @extend %btn;
+    color: #333;
+    width: 100%;
+    background: linear-gradient(#a3d840, #7ec31f);
+    text-shadow: 1px 1px 2px #2c6a02;
+    border: 1px solid #3b9a00;
+    border-radius: 5px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.5rem;
+  }
+  &--close {
+    @extend %btn;
+    color: #333;
+    background: linear-gradient(#f65e70, #f03747);
+    text-shadow: 1px 1px 2px #4e2505;
+    border: 1px solid #a72c36;
+    border-radius: 5px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.5rem;
+  }
+  &--small {
+    font-size: 1rem;
+  }
+}
