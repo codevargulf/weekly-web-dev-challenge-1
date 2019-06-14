@@ -12,176 +12,89 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway:400,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-        
-    <body>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./assets/log.png" alt="main_logo"/>
+      <img class="header__text" src="./assets/text.png" alt="main_text"/>
+    </header>
+    <main>
 
-        <div class="main-hero">
+      <div class="container">
+        <div class="form-grid">
 
-            <div class="row">
-                    <div class="col-sm d-flex justify-content-center">
-    
-                        <img src="assets/log.png" alt="" class="page-logo p-2">
-                        <img src="assets/text.png" alt="" class="page-text p-2">
-    
-                     </div>
-            </div> 
-
-            <div class="container">
-
-
-                <div class="row">
-
-                    <div class="col-sm">
-                        <div class="section section-register-form">
-                            <h1>Register Form</h1>
-                            <form action="" class="register-form">
-                                    <form>
-
-                                        <div class="form-group">
-                                            <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <img src="assets/user.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <img src="assets/lock.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <img src="assets/lock.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm Password">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email adress</label>
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <img src="assets/envelope.png" alt="">
-                                                    </div>
-                                                </div>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
-                                            </div>        
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <label for="exampleInputLocation1">Location</label>
-                                            <div class="input-group mb-2">
-                                                    <div class="input-group-prepend">
-                                                        <div class="input-group-text">
-                                                            <img src="assets/maps.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                <input type="location" class="form-control" id="exampleInputPassword1" placeholder="Location">
-                                            </div>
-                                            
-                                        </div>
-                                        
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">I have read and accept the terms of use</label>
-                                            <p>I have read and accept the terms of use</p>
-                                        </div>
-                                        
-                                        <button type="submit" class="btn btn--primary">Sign up</button>
-                                    </form>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-sm">
-
-                        <!-- <div class="section section-sign-form">
-                            <h1>Register Form</h1>
-                            <form action="" class="register-form">
-                                    <div class="form-group">
-                                                      <label for="exampleInputEmail1">Email address</label>
-                                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                    </div>
-                                    <div class="form-group">
-                                                      <label for="exampleInputPassword1">Password</label>
-                                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                    </div>
-                                    <div class="form-check">
-                                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-
-                        <div class="section section-recover-form">
-                                <h1>Register Form</h1>
-                                <form action="" class="register-form">
-                                        <div class="form-group">
-                                                          <label for="exampleInputEmail1">Email address</label>
-                                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                        </div>
-                                        <div class="form-group">
-                                                          <label for="exampleInputPassword1">Password</label>
-                                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-check">
-                                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                        </div>
-
-                        <div class="section section-subscribe-form">
-                                <h1>Register Form</h1>
-                                <form action="" class="register-form">
-                                        <div class="form-group">
-                                                          <label for="exampleInputEmail1">Email address</label>
-                                                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                        </div>
-                                        <div class="form-group">
-                                                          <label for="exampleInputPassword1">Password</label>
-                                                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-check">
-                                                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                        </div> -->
-
-                    </div>
-
-                </div>
-               
-
-            </div>
-            
+          <!-- Register Form -->
+          <div class="form-item form-register">
+            <h2 class="form-item__title">Register Form</h2>
+            <form class="form-item__form">
+              <div class="form-item__field">
+                <i class="fas fa-user"></i>
+                <input
+                  id="reg_username"
+                  name="username"
+                  type="text"
+                  placeholder="Username"
+                  required
+                />
+                <label for="reg_username">Username</label>
+              </div>
+              <div class="form-item__field">
+                <i class="fas fa-lock"></i>
+                <input
+                  id="reg_password"
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                  required
+                />
+                <label for="reg_password">Password</label>
+              </div>
+              <div class="form-item__field">
+                <i class="fas fa-lock"></i>
+                <input
+                  id="reg_conf-password"
+                  name="conf-password"
+                  type="password"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <label for="reg_conf-password">Confirm Password</label>
+              </div>
+              <div class="form-item__field">
+                <i class="fas fa-envelope"></i>
+                <input
+                  id="reg_email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <label for="reg_email">Email</label>
+              </div>
+              <div class="form-item__field">
+                <i class="fas fa-map-marker-alt"></i>
+                <select name="location" id="reg_location" required>
+                  <option value="" disabled selected hidden
+                    >Your Location</option
+                  >
+                  <option value="cracow">Cracow</option>
+                  <option value="warsaw">Warsaw</option>
+                  <option value="gdansk">Gdańsk</option>
+                </select>
+                <label for="reg_location">Your Location</label>
+              </div>
+              <div class="form-item__submit">
+                <input id="reg_terms" name="terms" type="checkbox" required />
+                <label for="reg_terms"
+                  >I have read and accept the terms of use.</label
+                >
+                <button class="btn--primary" type="submit">Sign up</button>
+              </div>
+            </form>
+          </div>
 
         </div>
-        
-    </body>
+      </div>
 
+    </main>
+  </body>
 </html>
