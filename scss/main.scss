@@ -1,75 +1,162 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
     font-family: "Titillium Web", sans-serif;
-}
-.main-hero {
-    min-height: 100vh;
-    width: 100%;
-    background-image: url("../assets/bg.png");
-    background-position: center right;
-    background-size: cover;
-}
-
-.main-hero::after {
-    content: "";
-    min-height: 100vh;
-    width: 100%;
-    background-image: url("../assets/noise.png");
-    background-position: center right;
-    background-size: cover;
-    z-index: 1;
+    background: url("../assets/bg.png") no-repeat top/cover;
 }
 
 .container {
+    max-width: 1050px;
     margin: auto;
-    width: 1000px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    padding: 0 68px;
 }
-
-.row {
-    flex-direction: row;
+  
+.form-item__title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
 }
-
-.col-sm {
-    padding: 1em;
-}
-
-form {
-    width: 100%;
+  
+.form-item__form {
     background-color: #f4f4f4;
     padding: 20px;
     background-clip: padding-box;
     border: 20px solid rgba(0, 0, 0, 0.3);
     border-radius: 6px;
-
+}
+  
+.form-item__field {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.form-item__field:focus-within {
+    background: #fff;
+    border-color: #7ec31f;
+}
+  
+.form-item__field .fas {
+    font-size: 1.4rem;
+    color: #dedede;
+    flex-basis: 50px;
+    text-align: center;
+    border-right: 1px solid #c6c6c6;
+}
+  
+.form-item__field input,
+.form-item__field select {
+    flex: 1;
+    height: 100%;
+    padding-left: 22px;
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+    color: #afafaf;
+    font-weight: 300;
+}
+  
+.form-item__field label {
+    display: none;
+}
+  
+input[type="checkbox"] {
+    display: none;
+}
+  
+input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
 }
 
-.page-logo, .page-text{
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+  
+input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    color: #afafaf;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+  
+input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #c6c6c6;
+    border-radius: 3px;
+    background: #f6f6f6;
+}
+  
+input[type="checkbox"] + label:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(#a3d840, #7ec31f);
+    border-radius: 3px;
+}
+  
+.btn--primary {
+    display: inline-block;
+    padding: 0.3rem 2rem;
+    transition: all 0.5s ease;
+    border: none;
+    cursor: pointer;
+}
+  
+.btn--primary:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+  
+.btn--primary {
+    color: #333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a3d840), to(#7ec31f));
+    background: linear-gradient(#a3d840, #7ec31f);
+    text-shadow: 1px 1px 2px #2c6a02;
+    border: 1px solid #3b9a00;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+  
+.header {
+    text-align: center;
     opacity: 0.4;
 }
 
-.section h1{
-    font-size: 32px;
-    color: #ffffff;
-    font-family: "Titillium Text22 L";
-    font-weight: 500;
-    filter: drop-shadow(1px 1.732px 2px rgba(43,1,0,0.75));
-    text-align: center; 
+  
+@media (max-width: 1050px) {
+    .header__logo {
+      width: 70%;
+    }
+    main .form-grid {
+      -webkit-columns: unset;
+              columns: unset;
+    }
 }
-
-label {
-    display: none;
+  
+@media (max-width: 540px) {
+    .container {
+      padding: 0;
+    }
+    main .form-grid {
+    columns: 1;
+    }
 }
-
-input::placeholder {
-    font-size: 15px;
-    color: #afafaf;
-    font-weight: 300;
-    // background-color: #f6f6f6;
-}
-
-@import "buttons";
