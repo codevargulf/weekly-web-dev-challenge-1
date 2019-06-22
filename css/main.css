@@ -157,6 +157,18 @@ input[type="checkbox"] + label:after {
   font-size: 1.5em;
 }
 
+.btn--close {
+  color: #333;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f65e70), to(#f03747));
+  background: linear-gradient(#f65e70, #f03747);
+  text-shadow: 1px 1px 2px #4e2505;
+  border: 1px solid #a72c36;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
 .header {
   text-align: center;
 }
